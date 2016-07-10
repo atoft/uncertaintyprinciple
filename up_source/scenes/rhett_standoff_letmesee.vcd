@@ -1,0 +1,42 @@
+// Choreo version 1
+event section "pause here"
+{
+  time 3.760000 -1.000000
+  param "noaction"
+}
+actor "rebel"
+{
+  channel "Speech"
+  {
+    event speak "rhett.standoff_letmesee"
+    {
+      time 0.033334 3.585987
+      param "rhett.standoff_letmesee"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Move"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.000000 4.033333
+      param "!target1"
+      param2 "Run"
+      resumecondition
+    }
+  }
+}
+
+scalesettings
+{
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "104"
+}
+fps 60
+snap off
+ignorePhonemes off

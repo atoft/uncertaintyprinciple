@@ -1,0 +1,6 @@
+  "UnlitGeneric"
+  {
+  "$basetexture" "UP_title"
+
+  "$translucent" 1
+  }

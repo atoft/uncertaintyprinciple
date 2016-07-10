@@ -1,0 +1,63 @@
+// Choreo version 1
+actor "jeff"
+{
+  channel "Speech"
+  {
+    event speak "jeff\heygetover.wav"
+    {
+      time 0.506667 1.947438
+      param "jeff.heygetover"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "waving"
+    {
+      time 0.540000 2.840001
+      param "g_wave"
+      absolutetags playback_time
+      {
+        "in" 0.352941
+        "loop" 0.779412
+        "end" 0.794118
+        "out" 0.808824
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.352941
+        "loop" 0.779412
+        "end" 0.794118
+        "out" 0.808824
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "Look"
+  {
+    event lookat "Look at player"
+    {
+      time 0.520000 4.020000
+      param "!player"
+    }
+    event face "Face !player"
+    {
+      time 0.433333 4.059999
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

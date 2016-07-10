@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "jeff"
+{
+  channel "Speech"
+  {
+    event speak "jeff\toomanyoverrun.wav"
+    {
+      time 0.420000 2.415533
+      param "jeff.toomanyoverrun"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "jeff\takecarforest.wav"
+    {
+      time 2.820001 6.349116
+      param "jeff.takethecar"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "jeff\gorun2.wav"
+    {
+      time 8.513333 10.165464
+      param "jeff.gorun"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Standing"
+  {
+    event gesture "Fear_Reaction_gesture"
+    {
+      time 6.486667 8.340000
+      param "Fear_Reaction_gesture"
+      sequenceduration 0.966667
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "g_plead_01"
+    {
+      time 0.673333 3.139999
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.219944
+        "accent" 0.357409
+        "loop" 0.549860
+        "end" 0.832432
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "Facing"
+  {
+    event face "Face player"
+    {
+      time 0.966666 6.586666
+      param "!player"
+    }
+    event face "Face !target1"
+    {
+      time 8.046666 10.500000
+      param "!target1"
+    }
+  }
+  channel "Looking"
+  {
+    event lookat "Look at player"
+    {
+      time 0.940000 6.633334
+      param "!player"
+    }
+    event lookat "Look at !target1"
+    {
+      time 6.673333 8.973333
+      param "!target1"
+    }
+    event lookat "Look at player again"
+    {
+      time 9.106668 10.186666
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

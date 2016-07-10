@@ -1,0 +1,66 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "b_OverHere_Right"
+    {
+      time 0.433334 2.233334
+      param "b_OverHere_Right"
+      absolutetags playback_time
+      {
+        "apex" 0.388889
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+    event moveto "Moveto !target1"
+    {
+      time 2.338889 3.300000
+      param "!target1"
+    }
+  }
+  channel "Speech"
+  {
+    event speak "rhett\speech_stop.wav"
+    {
+      time 0.138889 1.863968
+      param "rhett.speech_stop"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.021111 2.021112
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "120"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

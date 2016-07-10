@@ -1,0 +1,69 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\combat_getdoor.wav"
+    {
+      time 0.486667 1.736191
+      param "rhett.combat_getdoor"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 5.013333 -1.000000
+      param "1"
+    }
+  }
+  channel "Move"
+  {
+    event moveto "Moveto !target2"
+    {
+      time 0.480000 4.013333
+      param "!target2"
+      resumecondition
+    }
+    event face "Face !target1"
+    {
+      time 4.020000 7.286666
+      param "!target1"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "g_buttonpush_rifle"
+    {
+      time 4.053334 7.346667
+      param "g_buttonpush_rifle"
+      absolutetags playback_time
+      {
+        "apex" 0.102960
+        "accent" 0.311741
+        "loop" 0.570850
+        "end" 0.746964
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.172414
+        "accent" 0.241379
+        "loop" 0.620690
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,6 @@
+  "LightmappedGeneric"
+  {
+  "$basetexture" "pp2_signage"
+	"$surfaceprop" "Metal"
+
+  }

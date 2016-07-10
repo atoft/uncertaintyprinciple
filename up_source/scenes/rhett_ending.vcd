@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett.finale_glad"
+    {
+      time 0.026667 6.452789
+      param "rhett.finale_glad"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett.finale_hl3confirmed"
+    {
+      time 6.493334 16.058165
+      param "rhett.finale_hl3confirmed"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

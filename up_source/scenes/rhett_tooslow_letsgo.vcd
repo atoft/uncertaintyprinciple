@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\tooslow_letsgo.wav"
+    {
+      time 0.113333 2.150884
+      param "rhett.tooslow_letsgo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "hg_nod_left"
+    {
+      time 0.806667 2.106667
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

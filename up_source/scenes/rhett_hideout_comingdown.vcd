@@ -1,0 +1,103 @@
+// Choreo version 1
+event loop "loop position"
+{
+  time 12.261906 -1.000000
+  param "10.700000"
+  loopcount "-1"
+}
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\hideout_comingdown.wav"
+    {
+      time 0.006667 3.402585
+      param "rhett.hideout_comingdown"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett\hideout_iveseen.wav"
+    {
+      time 3.700000 10.308980
+      param "rhett.hideout_iveseen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "G_noway_big"
+    {
+      time 5.560000 7.793333
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "hg_nod_no"
+    {
+      time 1.606667 3.706667
+      param "hg_nod_no"
+      absolutetags playback_time
+      {
+        "apex" 0.080515
+        "extreme" 0.177134
+        "loop" 0.466989
+        "end" 0.730159
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      sequenceduration 2.333333
+    }
+    event firetrigger "fire trig"
+    {
+      time 10.353333 -1.000000
+      param "1"
+    }
+  }
+  channel "Move"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 7.079999 12.568571
+      param "!target1"
+      param2 "Walk"
+    }
+    event lookat "Look at !player"
+    {
+      time 0.100000 10.226667
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "84"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

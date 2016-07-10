@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\elevator_heres.wav"
+    {
+      time 0.000000 3.160816
+      param "rhett.elevator_heres"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

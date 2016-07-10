@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\hideout_madeit.wav"
+    {
+      time 0.800000 1.850431
+      param "rhett.hideout_madeit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett\hideout_comein.wav"
+    {
+      time 2.966666 7.195827
+      param "rhett.hideout_comein"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Move"
+  {
+    event moveto "Move to player"
+    {
+      time 2.093334 7.186666
+      param "!player"
+      param2 "Run"
+      distancetotarget 128.00
+    }
+    event face "Face player"
+    {
+      time 0.046666 1.106666
+      param "!player"
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "g_openarms"
+    {
+      time 0.813333 2.393333
+      param "g_openarms"
+      absolutetags playback_time
+      {
+        "apex" 0.213984
+        "accent" 0.449367
+        "loop" 0.599156
+        "end" 0.852321
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.142857
+        "accent" 0.300000
+        "loop" 0.714286
+        "end" 0.742857
+      }
+      sequenceduration 2.366667
+    }
+    event gesture "b_OverHere_Left"
+    {
+      time 5.186667 6.986668
+      param "b_OverHere_Left"
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+  }
+  channel "Look"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.066667 7.193334
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

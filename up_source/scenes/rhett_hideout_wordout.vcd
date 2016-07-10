@@ -1,0 +1,127 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\hideout_wordout.wav"
+    {
+      time 0.640000 4.297143
+      param "rhett.hideout_wordout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett\hideout_elevator.wav"
+    {
+      time 4.366667 7.867075
+      param "rhett.hideout_elevator"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett\hideout_go.wav"
+    {
+      time 10.500001 12.720409
+      param "rhett.hideout_go"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gestures"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.806667 7.380000
+      param "!player"
+    }
+    event lookat "Look at !target1"
+    {
+      time 0.040000 1.733334
+      param "!target1"
+    }
+    event face "Face !player"
+    {
+      time 1.473334 11.746667
+      param "!player"
+    }
+    event gesture "G_lefthandmotion"
+    {
+      time 4.926667 6.893333
+      param "G_lefthandmotion"
+      absolutetags playback_time
+      {
+        "apex" 0.224138
+        "accent" 0.482759
+        "loop" 0.517241
+        "end" 0.724138
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.224138
+        "accent" 0.482759
+        "loop" 0.517241
+        "end" 0.724138
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "g_point_swing_across"
+    {
+      time 10.500000 12.800000
+      param "g_point_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "end" 0.588235
+      }
+    }
+    event gesture "G_look_small"
+    {
+      time 2.606667 4.073334
+      param "G_look_small"
+      absolutetags playback_time
+      {
+        "apex" 0.325581
+        "accent" 0.465116
+        "loop" 0.604651
+        "end" 0.697674
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.325581
+        "accent" 0.465116
+        "loop" 0.604651
+        "end" 0.697674
+      }
+      sequenceduration 1.466667
+    }
+    event moveto "stay on target2"
+    {
+      time 0.560000 8.033333
+      param "!target2"
+      param2 "Walk"
+      distancetotarget 32.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

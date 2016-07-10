@@ -1,0 +1,5 @@
+  "LightmappedGeneric"
+  {
+  "$basetexture" "up_signal_monitor2"
+	"$surfaceprop" "Metal"
+  }

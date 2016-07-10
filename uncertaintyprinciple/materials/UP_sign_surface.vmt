@@ -1,0 +1,7 @@
+  "LightmappedGeneric"
+  {
+  "$basetexture" "up_sign_surface"
+  "$decal" 1
+  "$decalscale" 0.125
+  "$translucent" 1
+  }

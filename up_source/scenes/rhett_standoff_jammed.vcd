@@ -1,0 +1,116 @@
+// Choreo version 1
+event loop "loop typing"
+{
+  time 12.593334 -1.000000
+  param "11.600000"
+  loopcount "-1"
+}
+actor "rebel"
+{
+  channel "Speech"
+  {
+    event speak "rhett.standoff_jammed"
+    {
+      time 2.546667 6.151565
+      param "rhett.standoff_jammed"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett.standoff_coverme"
+    {
+      time 8.040000 10.364898
+      param "rhett.standoff_coverme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "g_R_type"
+    {
+      time 0.486667 4.120000
+      param "g_R_type"
+      absolutetags playback_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      sequenceduration 3.633333
+    }
+    event gesture "g_R_type"
+    {
+      time 5.006666 8.639999
+      param "g_R_type"
+      absolutetags playback_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      sequenceduration 3.633333
+    }
+    event gesture "g_R_type"
+    {
+      time 10.513333 14.146667
+      param "g_R_type"
+      absolutetags playback_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+    }
+  }
+  channel "Look and face"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.040000 14.166296
+      param "!target1"
+    }
+    event face "Face !target1"
+    {
+      time 0.260000 14.109259
+      param "!target1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "72"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

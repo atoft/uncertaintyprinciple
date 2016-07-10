@@ -1,0 +1,30 @@
+// Choreo version 1
+actor "rebel"
+{
+  channel "Speech"
+  {
+    event speak "rhett.standoff_goon"
+    {
+      time 0.040230 1.776692
+      param "rhett.standoff_goon"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "232"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

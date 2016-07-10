@@ -1,0 +1,114 @@
+// Choreo version 1
+event loop "loop ending"
+{
+  time 11.133333 -1.000000
+  param "10.000000"
+  loopcount "-1"
+}
+actor "rebel"
+{
+  channel "Dialogue"
+  {
+    event speak "rhett\hideout_radiotower.wav"
+    {
+      time 0.020000 5.192245
+      param "rhett.hideout_radiotower"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "rhett\hideout_map.wav"
+    {
+      time 6.273335 8.572110
+      param "rhett.hideout_map"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event firetrigger "end trigger"
+    {
+      time 9.346667 -1.000000
+      param "1"
+    }
+  }
+  channel "Gestures"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.020000 2.046666
+      param "!target1"
+    }
+    event lookat "Look at !player"
+    {
+      time 2.086666 5.299999
+      param "!player"
+    }
+    event gesture "bg_left"
+    {
+      time 1.973333 4.173333
+      param "bg_left"
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event moveto "Moveto !target2"
+    {
+      time 5.386667 11.186667
+      param "!target2"
+    }
+    event gesture "hg_puncuate_down"
+    {
+      time 6.486668 8.120001
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.552500
+        "end" 0.562500
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+    event face "Face !player"
+    {
+      time 1.280000 5.326666
+      param "!player"
+    }
+    event lookat "Look at !target3"
+    {
+      time 8.940001 11.206667
+      param "!target3"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

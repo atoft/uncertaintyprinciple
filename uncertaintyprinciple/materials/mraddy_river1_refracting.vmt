@@ -1,0 +1,20 @@
+"Refract"
+{
+"$refractamount" ".085"
+"$bluramount" "1"
+"$scale" "[1 1]"
+"$dudvmap" "mraddy_river1NRM"
+"$normalmap" "mraddy_river1NRM"
+//$refracttint "[2 2 3]"
+"$translucent" 1
+"$nocull" 1
+Proxies
+{
+TextureScroll
+{
+texturescrollvar $bumpTransform
+texturescrollrate 1.3
+texturescrollangle 270.00
+}
+}
+}

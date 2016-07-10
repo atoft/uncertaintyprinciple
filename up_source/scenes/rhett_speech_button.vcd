@@ -1,0 +1,69 @@
+// Choreo version 1
+event section "pause"
+{
+  time 0.753334 -1.000000
+  param "noaction"
+}
+actor "rebel"
+{
+  channel "Movement"
+  {
+    event moveto "Moveto !target1"
+    {
+      time 0.020000 1.040001
+      param "!target1"
+      resumecondition
+      distancetotarget 16.00
+    }
+    event face "Face !target2"
+    {
+      time 0.793334 2.760000
+      param "!target2"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 1.893334 -1.000000
+      param "1"
+    }
+    event face "Face !player"
+    {
+      time 3.066667 3.566667
+      param "!player"
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "GestureButton"
+    {
+      time 0.986666 3.119999
+      param "GestureButton"
+      absolutetags playback_time
+      {
+        "apex" 0.222222
+        "accent" 0.904762
+        "loop" 0.920635
+        "end" 0.936508
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.222222
+        "accent" 0.904762
+        "loop" 0.920635
+        "end" 0.936508
+      }
+      sequenceduration 2.133333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

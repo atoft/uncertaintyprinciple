@@ -1,0 +1,6 @@
+  "LightmappedGeneric"
+  {
+  "$basetexture" "pp2_monitor2"
+	"$surfaceprop" "Metal"
+$selfillum 1
+  }

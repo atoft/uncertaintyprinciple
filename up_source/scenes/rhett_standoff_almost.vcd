@@ -1,0 +1,69 @@
+// Choreo version 1
+event loop "loop typing"
+{
+  time 4.400000 -1.000000
+  param "3.400000"
+  loopcount "-1"
+}
+actor "rebel"
+{
+  channel "Speech"
+  {
+    event speak "rhett.standoff_almost"
+    {
+      time 0.159999 2.119183
+      param "rhett.standoff_almost"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "g_R_type"
+    {
+      time 2.320000 5.953333
+      param "g_R_type"
+      absolutetags playback_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.305556
+        "accent" 0.416667
+        "loop" 0.574074
+        "end" 0.833333
+      }
+      sequenceduration 3.633333
+    }
+  }
+  channel "Look and face"
+  {
+    event lookat "Look at !target1"
+    {
+      time 0.040000 10.993334
+      param "!target1"
+    }
+    event face "Face !target1"
+    {
+      time 0.260000 10.999999
+      param "!target1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

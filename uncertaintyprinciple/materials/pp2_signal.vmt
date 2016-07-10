@@ -1,0 +1,7 @@
+  "LightmappedGeneric"
+  {
+  "$basetexture" "pp2_signal"
+	"$surfaceprop" "Metal"
+  "$decal" 1
+  "$decalscale" 0.25
+  }
